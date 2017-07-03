@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mtplview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="right"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dialog_commonmsg_rltvMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:id="@+id/dialog_commonmsg_txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="3"
+                android:padding="@dimen/margin_10dp"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_18dp"
+                mtplview:TypeFace="@string/fontface_robotoblack" />
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+
+                android:id="@+id/dialog_commonmsg_txtHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialog_commonmsg_txtTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_15dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="3"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_17dp"
+                mtplview:TypeFace="@string/fontface_robotoblack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialog_commonmsg_txtHeader"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:orientation="vertical">
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:id="@+id/dialog_commonmsg_txtOkBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_25dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_15dp"
+                    android:text="@string/common_ok"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_17dp"
+                    mtplview:TypeFace="@string/fontface_robotoblack" />
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:id="@+id/dialog_commonmsg_txtCancelBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_15dp"
+                    android:text="@string/common_cancel"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_17dp"
+                    android:visibility="gone"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/dialog_commonmsg_imgClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

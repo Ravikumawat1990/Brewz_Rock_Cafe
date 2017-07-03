@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/notiCount"
+        android:icon="@drawable/foodcat"
+        android:title="notiCount"
+        myapp:showAsAction="always" />
+    <item
+        android:id="@+id/refereshList"
+        android:icon="@drawable/ic_refresh_white_24dp"
+        android:title="ref"
+        myapp:showAsAction="always" />
+
+</menu>

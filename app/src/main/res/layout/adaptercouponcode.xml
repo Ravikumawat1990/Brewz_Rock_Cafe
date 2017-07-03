@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:mtplview="http://schemas.android.com/tools"
+    android:id="@+id/placeCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    card_view:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/font_10dp">
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:id="@+id/adptCouponCodetitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:text="10 % Discout"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:id="@+id/adptCouponCodeDis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:text="10 % Discout"
+                android:textSize="15sp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:id="@+id/adptCouponCodeApplicable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:text="Coupon applicable for"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:id="@+id/catType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_5dp"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:text="Coupon"
+                    android:textColor="@color/colorPrimaryDark"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coupne Code"
+                        mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+                    <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Tab on code to copy."
+                        android:textSize="10sp"
+                        mtplview:TypeFace="@string/fontface_robotolight_0" />
+                </LinearLayout>
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:id="@+id/adptCouponCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:background="@android:color/holo_green_light"
+                    android:padding="@dimen/margin_20dp"
+                    android:text="ALL10"
+                    android:textColor="@android:color/white"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+            </LinearLayout>
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:text="Terms and condition"
+                android:visibility="gone"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verify Offer"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/lightGray"
+                    android:text="|"></View>
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Coupon used 3  times"
+                    android:textStyle="bold"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/lightGray"
+                    android:text="|"></View>
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Valid from 01-Sep-2016 to 1-Sep-2016"
+                    android:textStyle="bold"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/lightGray"
+                    android:text="|"></View>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

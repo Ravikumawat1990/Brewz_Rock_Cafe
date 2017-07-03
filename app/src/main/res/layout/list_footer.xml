@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mtplview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingEnd="10dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="10dp"
+        android:paddingStart="13dp"
+        android:paddingTop="2dp">
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+            android:id="@+id/footer_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_20dp"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="14sp"
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+        <RadioButton
+            android:id="@+id/btn_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+
+        <CheckBox
+            android:id="@+id/btn_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGray"
+        android:visibility="gone" />
+
+</LinearLayout>

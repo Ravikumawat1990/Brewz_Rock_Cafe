@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mtplview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainListing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/Internet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGray"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardviewcatlisting"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_5dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+            >
+        </android.support.v7.widget.CardView>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content">
+
+            <GridView
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="#8c898f"
+                android:clickable="true"
+                android:gravity="left"
+                android:horizontalSpacing="2dp"
+                android:numColumns="2"
+                android:padding="2dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2dp"
+                android:visibility="gone"></GridView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group" />
+
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+            android:id="@+id/textViewNoInterNet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/font_10dp"
+            android:gravity="center"
+            android:text="@string/internetMsg"
+            android:textSize="@dimen/font_24dp"
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+    </LinearLayout>
+</LinearLayout>

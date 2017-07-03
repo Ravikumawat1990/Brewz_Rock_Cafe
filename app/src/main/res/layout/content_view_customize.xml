@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mtplview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.app.elixir.brewz_rock_cafe.activity.ViewCustomize"
+    tools:showIn="@layout/activity_view_customize">
+
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+            android:id="@+id/textViewGrandTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="@dimen/margin_10dp"
+            android:text="Total Rs. 0.0"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10dp"
+                android:text="Selected Add-ons"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:id="@+id/items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10dp"
+                android:text="-"
+                android:textSize="15sp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addOnHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_weight="2"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/margin_5dp"
+            android:text="REQUIRED ADDON"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/lightGray" />
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/margin_5dp"
+            android:text="NOT REQUIRED ADDON"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutexpandList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/addOnHeader"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ExpandableListView
+            android:id="@+id/expListView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></ExpandableListView>
+
+        <ExpandableListView
+            android:id="@+id/expListView1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></ExpandableListView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

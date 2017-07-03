@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mtplview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="@dimen/margin_5dp"
+        android:text="Have a Coupon?"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/popupCoupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ENTER COUPON"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:background="@drawable/roundedbtn"
+            android:padding="@dimen/font_10dp"
+            android:text="Apply Coupon"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

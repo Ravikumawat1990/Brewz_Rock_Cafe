@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mtplview="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_5dp">
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/margin_80dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:padding="1dp">
+
+            <ImageView
+                android:id="@+id/imgPlaceHolder"
+                android:layout_width="@dimen/margin_80dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/placeholder" />
+
+            <ImageView
+                android:id="@+id/list_item_entry_drawable"
+                android:layout_width="@dimen/margin_80dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="ItemName"
+                    android:textColor="@color/white"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:id="@+id/list_item_entry_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/addOnsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="AddOns"
+                    android:textColor="@color/white"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:id="@+id/addonstxt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/list_item_entry_title"
+                    android:layout_below="@id/list_item_entry_title"
+                    android:layout_weight="1.5"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/priceper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Price Per."
+                    android:textColor="@color/white"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:id="@+id/list_item_entry_summary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Quantity."
+                    android:textColor="@color/white"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:id="@+id/itemQuantity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/list_item_entry_title"
+                    android:layout_below="@id/list_item_entry_summary"
+                    android:layout_weight="1.5"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/totLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Total."
+                    android:textColor="@color/white"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:id="@+id/itemTotal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

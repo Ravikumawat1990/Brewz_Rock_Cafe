@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:mtplview="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        card_view:cardBackgroundColor="@android:color/white">
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="@dimen/margin_10dp"
+            android:paddingLeft="@dimen/margin_20dp"
+            android:text="ORDERS TO BE DELIVERED"
+            android:textColor="@color/black"
+
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/Internet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGray"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleViewDeliveryBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mdtp_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+            android:id="@+id/textViewNoInterNet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/font_10dp"
+            android:gravity="center"
+
+
+            android:textSize="@dimen/font_24dp"
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+    </LinearLayout>
+
+</LinearLayout>

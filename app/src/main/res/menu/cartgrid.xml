@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/cartMenu"
+        android:icon="@drawable/ic_shopping_cart_white_24dp"
+        android:title="Add to Cart"
+        myapp:showAsAction="always" />
+
+
+
+    <item
+        android:id="@+id/toogelGrid"
+        android:icon="@drawable/ic_view_list_white_24dp"
+        android:title="Listing"
+        myapp:showAsAction="always" />
+
+</menu>

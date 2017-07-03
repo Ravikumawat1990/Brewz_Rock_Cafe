@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mtplview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+            android:weightSum="2">
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:text="Order No:"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:id="@+id/txtOrderNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+            android:weightSum="2">
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:text="Name :"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:id="@+id/txtName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:textSize="14dp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+            android:weightSum="2">
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:text="Date :"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:id="@+id/txtOrderDateTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:textSize="14dp"
+
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+            android:weightSum="2">
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:text="Status :"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:id="@+id/txt_OrderStatus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:ellipsize="marquee"
+                android:gravity="left"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+            android:weightSum="2">
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:text="Email :"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:id="@+id/txtemail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:textSize="14dp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+            android:weightSum="2">
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:text="Mobile :"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:id="@+id/txtmobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:textSize="14dp"
+
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+            android:weightSum="2">
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:text="Pay Mode :"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:id="@+id/txt_payMode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:ellipsize="marquee"
+                android:gravity="left"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+            android:weightSum="2">
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:text="Price :"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:id="@+id/txt_Amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:ellipsize="marquee"
+                android:gravity="left"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="right"
+                android:text="Address :"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:id="@+id/txt_adrress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:ellipsize="marquee"
+                android:gravity="left"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="@dimen/margin_5dp"
+                android:singleLine="true"
+                android:textSize="14dp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

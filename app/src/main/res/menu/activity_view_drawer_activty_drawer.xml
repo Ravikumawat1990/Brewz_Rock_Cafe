@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_profile"
+
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/nav_contactUs"
+
+            android:title="Contact Us" />
+
+        <item
+            android:id="@+id/nav_code"
+
+            android:title="Coupons" />
+
+        <item
+            android:id="@+id/nav_feedback"
+
+            android:title="Feedback" />
+        <item
+            android:id="@+id/orderHist"
+            android:title="Order History" />
+
+
+        <item
+            android:id="@+id/nav_returnPolicy"
+
+            android:title="Return Policy" />
+
+
+        <!--<item-->
+        <!--android:id="@+id/nav_delivery"-->
+
+        <!--android:title="Delivery Boy" />-->
+
+        <item
+            android:id="@+id/nav_disclaminer"
+
+            android:title="Disclaimer" />
+
+        <item
+            android:id="@+id/nav_share"
+
+            android:title="Share" />
+
+        <!--<item-->
+        <!--android:id="@+id/nav_noti"-->
+        <!--android:title="Notifications" />-->
+        <item
+            android:id="@+id/nav_logout"
+
+            android:title="Logout" />
+    </group>
+
+</menu>

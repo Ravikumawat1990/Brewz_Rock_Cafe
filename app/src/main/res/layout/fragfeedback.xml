@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mtplview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+    <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/colorPrimary"
+            android:secondaryProgressTint="@color/colorPrimary" />
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplEditText
+            android:id="@+id/edtCommet"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_100dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginRight="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:background="@drawable/edittextborder"
+            android:gravity="top|left"
+            android:hint="Feedback"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLength="150"
+            android:maxLines="4"
+            android:minLines="4"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:textSize="16sp"
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_2dp"
+            android:padding="5dp"
+            android:text="Feedback should be up to 500 character."
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp" />
+
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplButton
+            android:id="@+id/btnsubmit"
+            android:layout_width="@dimen/margin_160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/font_20dp"
+            android:background="@drawable/buttoncorner"
+            android:gravity="center"
+            android:text="SUBMIT"
+            android:textColor="@android:color/white"
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

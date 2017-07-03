@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mtplview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainmobveri"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.app.elixir.brewz_rock_cafe.activity.ViewMobileNoVerification">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/toolbar"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+
+            <LinearLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/usernameWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/moblieNoVerNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/mobNo"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:singleLine="true"
+
+                        android:textSize="20sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:id="@+id/mobText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:padding="@dimen/font_5dp"
+                    android:text="@string/text1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/font_5dp"
+                    android:text="@string/text2"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.app.elixir.brewz_rock_cafe.mtplview.MtplButton
+        android:id="@+id/mobileVerifybtn"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        android:layout_marginLeft="@dimen/font_10dp"
+        android:layout_marginRight="@dimen/font_10dp"
+        android:background="@drawable/buttonselecatable"
+        android:text="@string/verifymobNo"
+
+        android:textColor="@android:color/white"
+
+        mtplview:TypeFace="@string/fontface_robotolight_0" />
+</RelativeLayout>

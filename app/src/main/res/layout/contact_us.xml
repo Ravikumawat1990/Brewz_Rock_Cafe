@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mtplview="http://schemas.android.com/tools"
+    android:id="@+id/mainScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/Internet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_10dp">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_250dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY" />
+
+                        <ProgressBar
+                            android:id="@+id/pgnar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                            android:id="@+id/textViewCompName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/margin_10dp"
+                            android:text=""
+                            android:textSize="25sp"
+                            mtplview:TypeFace="@string/fontface_robotolight_0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                            android:id="@+id/textViewebsite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autoLink="web"
+                            android:padding="@dimen/margin_10dp"
+                            android:singleLine="true"
+                            android:text=""
+                            mtplview:TypeFace="@string/fontface_robotolight_0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                            android:id="@+id/textViewCompEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:autoLink="email"
+                            android:padding="@dimen/margin_10dp"
+                            android:text=""
+                            mtplview:TypeFace="@string/fontface_robotolight_0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                            android:id="@+id/textViewComPhoneNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:autoLink="phone"
+                            android:padding="@dimen/margin_10dp"
+                            android:text=""
+                            mtplview:TypeFace="@string/fontface_robotolight_0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                            android:id="@+id/textViewCompOfficeNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autoLink="phone"
+                            android:padding="@dimen/margin_10dp"
+                            android:text=""
+                            mtplview:TypeFace="@string/fontface_robotolight_0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                            android:id="@+id/textViewAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:padding="@dimen/margin_10dp"
+                            android:text=""
+                            mtplview:TypeFace="@string/fontface_robotolight_0" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group" />
+
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+            android:id="@+id/textViewNoInterNet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/font_10dp"
+            android:gravity="center"
+            android:text="@string/internetMsg"
+
+            android:textSize="@dimen/font_24dp"
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+    </LinearLayout>
+</LinearLayout>

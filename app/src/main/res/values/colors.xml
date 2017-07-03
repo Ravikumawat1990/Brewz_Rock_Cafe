@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d73a20</color>
+    <color name="colorPrimaryDark">#b0210a</color>
+    <color name="colorAccent">#b0210a</color>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#3F51B5</color>-->
+
+    <color name="colorLightGray">#D8D8D8</color>
+    <color name="color_forgotdialog_editbox">#f5f5f5</color>
+    <color name="color_edittext_border">#c9c9c9</color>
+
+    <color name="drawerItemColor">#4A4A4A</color>
+    <color name="lightGray">#d3d3d3</color>
+    <color name="editTextTextColor">#D8D8D8</color>
+    <color name="contactUsMsg">#7ED321</color>
+
+    <color name="bgColor">#FAFAFA</color>
+    <color name="titleColor">#FFFFFF</color>
+
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="black">#000000</color>
+
+</resources>

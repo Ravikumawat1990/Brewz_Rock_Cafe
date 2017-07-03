@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "696190724359",
+    "firebase_url": "https://brewz-rock-cafe.firebaseio.com",
+    "project_id": "brewz-rock-cafe",
+    "storage_bucket": "brewz-rock-cafe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696190724359:android:3104c5c3e48d23c8",
+        "android_client_info": {
+          "package_name": "com.app.elixir.brewz_rock_cafe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696190724359-uot4hq6p29jsi93kkcqfuigt44h470b3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBboZpLTm-etteS4j83NFshTIiwWWJHKng"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

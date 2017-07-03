@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/custom"
+        android:icon="@drawable/ic_done_all_white_24dp"
+        android:title="Add to Cart"
+        myapp:showAsAction="always" />
+</menu>

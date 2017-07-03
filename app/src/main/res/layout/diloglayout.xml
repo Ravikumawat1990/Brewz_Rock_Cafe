@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mtplview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin_10dp"
+    android:layout_marginRight="@dimen/margin_10dp"
+    android:background="@android:color/white"
+
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_10dp"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="10dip">
+
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="20dp"
+            android:text="APPLY COUPON"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <!-- Lista -->
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/lightGray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+            android:id="@+id/forgot_pswrd_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:gravity="center_vertical"
+            android:text="Enter coupon code"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplEditText
+            android:id="@+id/edtSecPhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_45dp"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:background="@drawable/gray_rect"
+            android:gravity="center_vertical"
+            android:hint="Type coupon code here"
+
+            android:maxLength="10"
+            android:padding="@dimen/margin_10dp"
+
+            android:singleLine="true"
+            android:textColorHint="@color/lightGray"
+            android:textSize="18sp"
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+    </LinearLayout>
+
+    <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:gravity="center"
+        android:text="OR"
+        android:textColor="@color/lightGray"
+        android:textSize="20sp" />
+
+    <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:gravity="center_vertical"
+        android:text="Choose a valid coupon"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_10dp"
+        android:background="@color/lightGray"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/component_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:choiceMode="singleChoice" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplButton
+                android:id="@+id/positive_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="Cancel"
+                android:textColor="@android:color/white" />
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplButton
+                android:id="@+id/btnApplay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="Apply Coupon"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

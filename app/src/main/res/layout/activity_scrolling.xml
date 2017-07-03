@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mtplview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.app.elixir.brewz_rock_cafe.activity.PopupActivity">
+
+    <com.app.elixir.brewz_rock_cafe.mtplview.MtplEditText
+        android:id="@+id/conatctUsCommnent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:layout_marginRight="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:background="@drawable/edittextborder"
+        android:gravity="top|left"
+        android:hint="Comments"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="4"
+        android:minLines="4"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:textSize="16sp"
+        mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:weightSum="2">
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="OK"
+            android:textColor="@android:color/white"
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="Cancel"
+            android:textColor="@android:color/white"
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

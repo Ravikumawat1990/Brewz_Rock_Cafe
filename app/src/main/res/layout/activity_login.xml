@@ -1,0 +1,182 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mtplview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:id="@+id/mainLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:background="@android:color/white">
+
+                    <com.app.elixir.brewz_rock_cafe.mtplview.MtplButton
+                        android:id="@+id/titleMainButton"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/arrow_shape"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_10dp"
+                        android:text="LOGIN WITH OTP"
+                        android:textColor="@android:color/white"
+                        mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/titleMainButton"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_10dp"
+                            android:layout_marginRight="@dimen/margin_10dp"
+                            android:layout_marginTop="@dimen/margin_10dp">
+
+                            <EditText
+                                android:id="@+id/edtMobileNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/mno"
+                                android:inputType="phone"
+                                android:maxLength="10" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <com.app.elixir.brewz_rock_cafe.mtplview.MtplButton
+                            android:id="@+id/btnLoginVerifyNo"
+                            android:layout_width="@dimen/margin_160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/verifymobNo"
+                            android:textColor="@android:color/white"
+                            mtplview:TypeFace="@string/fontface_robotolight_0" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mainLayout"
+                    android:layout_marginTop="@dimen/margin_10dp">
+
+                    <com.app.elixir.brewz_rock_cafe.mtplview.MtplButton
+                        android:id="@+id/belowMain"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/arrow_shape"
+                        android:gravity="left|center_vertical"
+                        android:padding="@dimen/margin_10dp"
+                        android:text="LOGIN WITH EMAIL"
+                        android:textColor="@android:color/white"
+                        mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/belowMain"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_10dp"
+                            android:layout_marginRight="@dimen/margin_10dp"
+                            android:layout_marginTop="@dimen/margin_10dp">
+
+                            <EditText
+                                android:id="@+id/edtEmail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/email"
+                                android:inputType="textEmailAddress" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_10dp"
+                            android:layout_marginRight="@dimen/margin_10dp"
+                            android:layout_marginTop="@dimen/margin_10dp">
+
+                            <EditText
+                                android:id="@+id/loginpass"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/prompt_password"
+                                android:inputType="textPassword" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.app.elixir.brewz_rock_cafe.mtplview.MtplButton
+                                android:id="@+id/btnLoginSignin"
+                                android:layout_width="@dimen/margin_160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/margin_5dp"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/action_sign_in"
+                                android:textColor="@android:color/white"
+                                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+                            <com.app.elixir.brewz_rock_cafe.mtplview.MtplButton
+                                android:id="@+id/btnLoginForgot"
+                                android:layout_width="@dimen/margin_160dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/margin_5dp"
+                                android:background="@color/colorPrimary"
+                                android:text="@string/action_forgotPass"
+                                android:textColor="@android:color/white"
+                                mtplview:TypeFace="@string/fontface_robotolight_0" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </ScrollView>
+</LinearLayout>

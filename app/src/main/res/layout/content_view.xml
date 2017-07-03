@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mtplview="http://schemas.android.com/apk/res-auto"
+    xmlns:numberpicker="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/view_scrolling">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:id="@+id/textViewItemDis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_5dp"
+                android:textSize="15sp"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:gravity="center">
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplButton
+                android:layout_width="@dimen/margin_160dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/buttoncorner"
+                android:text="@string/btnCustomize"
+                android:textColor="@android:color/white"
+                android:visibility="gone"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+            <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                android:id="@+id/itemType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/margin_5dp"
+                android:paddingTop="@dimen/margin_5dp"
+                android:text="Select Size"
+                android:textSize="18sp"
+                android:visibility="gone"
+                mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+            <LinearLayout
+                android:id="@+id/addonsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/addOnHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal">
+
+                    <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_5dp"
+                        android:text="Required AddOn"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightGray" />
+
+                    <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/margin_5dp"
+                        android:text="Not Required AddOn"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layoutexpandList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:weightSum="2">
+
+
+                    <ExpandableListView
+                        android:id="@+id/expListView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"></ExpandableListView>
+
+                    <ExpandableListView
+                        android:id="@+id/expListView1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"></ExpandableListView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btnAddonsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout">
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplButton
+                    android:id="@+id/btnaddons"
+                    android:layout_width="@dimen/margin_160dp"
+                    android:layout_height="@dimen/font_40dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:background="@drawable/buttoncorner"
+                    android:text="@string/btnAddons"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@color/lightGray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/margin_5dp">
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:id="@+id/itemDetailQuant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/quant"
+                    android:textColor="@android:color/black"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/number_picker_header"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_5dp">
+
+                <com.app.elixir.brewz_rock_cafe.numberPicker.NumberPicker
+                    android:id="@+id/number_picker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    numberpicker:min="1"
+                    numberpicker:unit="1"
+                    numberpicker:value="-5" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:gravity="center">
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:id="@+id/textViewItemPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    mtplview:TypeFace="@string/fontface_robotolight_0" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@color/lightGray" />
+
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplButton
+            android:id="@+id/addtoCartbtn"
+            android:layout_width="@dimen/margin_160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@drawable/buttoncorner"
+            android:text="@string/add_to_cart"
+            android:textColor="@android:color/white"
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

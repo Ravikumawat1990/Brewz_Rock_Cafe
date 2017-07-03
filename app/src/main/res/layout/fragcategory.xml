@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:mtplview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainCAT"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/Internet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGray"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_150dp"
+            android:layout_margin="@dimen/margin_5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplButton
+                    android:layout_width="@dimen/margin_200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary"
+
+                    android:textColor="@color/mdtp_white"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnbooktbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/round_shapebtn"
+                    android:text="BOOK A TABLE"
+                    android:textColor="@color/mdtp_white" />
+
+                <com.sackcentury.shinebuttonlib.ShineButton
+                    android:id="@+id/po_image1"
+                    android:layout_width="@dimen/margin_80dp"
+                    android:layout_height="@dimen/margin_80dp"
+                    android:layout_centerInParent="true"
+                    android:src="@android:color/darker_gray"
+                    android:visibility="gone"
+                    app:allow_random_color="false"
+                    app:big_shine_color="#FF6666"
+                    app:btn_color="@android:color/darker_gray"
+                    app:btn_fill_color="#FF6666"
+                    app:click_animation_duration="200"
+                    app:enable_flashing="false"
+                    app:shine_animation_duration="1500"
+                    app:shine_count="8"
+                    app:shine_turn_angle="10"
+                    app:siShape="@raw/like"
+                    app:small_shine_color="#CC9999"
+                    app:small_shine_offset_angle="20" />
+
+                <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/font_10dp"
+                    android:gravity="center"
+                    android:text="CLICK ON THUMB TO \nBOOK A TABLE"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_5dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+
+            >
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/group" />
+
+
+        <com.app.elixir.brewz_rock_cafe.mtplview.MtplTextView
+            android:id="@+id/textViewNoInterNet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/font_10dp"
+            android:gravity="center"
+            android:text="@string/internetMsg"
+
+            android:textSize="@dimen/font_24dp"
+            mtplview:TypeFace="@string/fontface_robotolight_0" />
+    </LinearLayout>
+</LinearLayout>
